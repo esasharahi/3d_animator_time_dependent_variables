@@ -15,9 +15,12 @@ z = df[culs_names[3]]
 fig = plt.figure()
 ax = plt.axes(projection='3d')
 
+
 def update_plot(i):
     ax.cla()
     ax.plot(x[:i], y[:i], z[:i])
+    #ax.scatter3D(x[:i], y[:i], z[:i])
+    #ax.scatter3D(x[:i], y[:i], z[:i], c=x[:i] + y[:i] + z[:i])
     ax.set_xlabel('x')
     ax.set_ylabel('y')
     ax.set_zlabel('z')
